@@ -1,8 +1,5 @@
-// Creating two varibles
-var Sent_1 = "I travelled abroad last summer";
-var Sent_2 = " but I am doing a staycation this year";
-// Concatenating the two variables
-document.write(Sent_1 + Sent_2);
+// Writing an expression using document.write()
+document.write(245 * 35);
 
 
 
