@@ -1,4 +1,4 @@
-function multiplication() { // function to perform
-    var mult=15*8;
-    document.getElementById("Mult").innerHTML="15 * 8 = " + mult; // print the result in html
+function division() { // function to perform
+    var div=81/9;
+    document.getElementById("Div").innerHTML="81 / 9 = " + div; // print the result in html
 }
