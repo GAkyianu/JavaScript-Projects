@@ -1,4 +1,5 @@
-function random() { // defining a function to perfom the random math operation
-    var ran=Math.random()*8;
-    document.getElementById("Ran").innerHTML="Maths.random()*8) = " + ran; // print the result in html
+function increment() { // defining a function to perform the increment math operation
+    let x = 5; // declare a variable and assign it a value
+    x++; // increment the value of x by 1
+    document.getElementById("Inc").innerHTML="Incremented value = " + x; // print the result in html
 }
