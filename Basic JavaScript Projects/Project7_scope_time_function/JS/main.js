@@ -12,9 +12,21 @@ function Age_Function() {
     else {
         License = "You are not eligible for a license!";
     document.getElementById("How_old_are_you?").innerHTML = License 
+// Utilizing the time_function() from previous slides
+function Time_function() {
+    var Time = new Date().getHours();
+    var Reply;
+    if (Time < 12 == Time > 0) {
+        Reply = "It is morning time!";
+    }else if (Time >= 12 == Time < 18) {
+        Reply = "It is afternoon!";
+    }else {
+        Reply = "It is evening time!";
 }
 function Add_numbers_2(){
     document.write(A + 45); // Using global variable
+    document.getElementById("Time_of_day").innerHTML = Reply;
 }
 Add_numbers_1();
 Add_numbers_2();
+
