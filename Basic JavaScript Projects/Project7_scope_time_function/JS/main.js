@@ -1,15 +1,11 @@
 // main.js
 
-// Assigning local and global variables
-
+var A = 35; // Global variable
 function Add_numbers_1() {
-    var A = 25; // local variable
-    document.write(15 + A + "<br>"); // Using local variable
+    document.write(15 + A + "<br>"); 
 }
-function Add_numbers_2() {
-    document.write(A + 35);
-    console.log(A); // Using console.log to debug which variable is been used
-    }
+function Add_numbers_2(){
+    document.write(A + 45); // Using global variable
+}
 Add_numbers_1();
 Add_numbers_2();
-
