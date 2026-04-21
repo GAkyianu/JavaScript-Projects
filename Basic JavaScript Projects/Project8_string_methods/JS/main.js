@@ -6,4 +6,11 @@ function full_sentence() {
     var part_4 = "Hopefully, something will come up soon!";
     var whole_sentence = part_1.concat(part_2, part_3, part_4);
     document.getElementById("StringMethod").innerHTML = whole_sentence;
+// main.js
+
+//Utilizing the .slice() method
+function slice_Method() {
+    var sentence = "Hi Bob Jones";
+    var section = sentence.slice(3, 6);
+    document.getElementById("Slice").innerHTML = section;
 }
