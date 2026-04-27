@@ -1,16 +1,5 @@
-// Utilzing the .concat() method
-function full_sentence() {
-    var part_1 = "Summer is fast approaching ";
-    var part_2 = "and I have still not decided ";
-    var part_3 = "where we are going this time. ";
-    var part_4 = "Hopefully, something will come up soon!";
-    var whole_sentence = part_1.concat(part_2, part_3, part_4);
-    document.getElementById("StringMethod").innerHTML = whole_sentence;
-// main.js
-
-//Utilizing the .slice() method
-function slice_Method() {
-    var sentence = "Hi Bob Jones";
-    var section = sentence.slice(3, 6);
-    document.getElementById("Slice").innerHTML = section;
+//Utilizing the .toString() method
+function string_Method() {
+    var myNumber = 312;
+    document.getElementById("ToString").innerHTML = myNumber.toString();
 }
