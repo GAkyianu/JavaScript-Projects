@@ -1,6 +1,7 @@
 // Image slideshow functions
 let slideIndex = 1;
 showSlides(slideIndex);
+//main.js
 
 // Next/previous controls
 function plusSlides(n) {
@@ -25,11 +26,30 @@ function showSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
+// Countdown timer function
+function countdown() {
+  // 1. Convert input string to a number
+  let seconds = Number(document.getElementById("seconds").value);
+  
+  // 2. Target the display element
+  const display = document.getElementById("timer");
+    
+  // My subtraction syntax
+  function tick() {
+     seconds = seconds -1;
+    
+    display.innerHTML = seconds;
 
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
+    if (seconds > 0) {
+      setTimeout(tick, 1000);
+    } else {
+      alert("Time's up!");
     }
+  }
 
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
+  tick();
 }
