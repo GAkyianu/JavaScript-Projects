@@ -1,23 +1,16 @@
 // main.js
 
-// A function using a while loop
-function count_to_fifteen() {
-    var numbersString = "";
-    var Y = 1;
-    while (Y <= 15) {
-        numbersString += "<br>" + Y;
-        Y++;
-// A function using a for loop
-var Instrument = ["Clarinet", "Drums", "Piano", "Bass", "Voilin", "Trumpet", "Flute"];
-var Content =  "";
-var Y;
-function for_Loop() {
-    for (Y = 0; Y < Instrument.length; Y++) {
-        Content += Instrument[Y] + "<br>";    
-    }
-    document.getElementById("Counting_to_fifteen").innerHTML = numbersString;
-    document.getElementById("List_of_Instruments").innerHTML = Content;
+// A function with an array
+function dog_acts() {
+    var Dog_Activity = [];
+    Dog_Activity[0] = "running";
+    Dog_Activity[1] = "sleeping";
+    Dog_Activity[2] = "playing";
+    Dog_Activity[3] = "barking";
+    document.getElementById("Dog").innerHTML = "In this activity, the dog is " + Dog_Activity[3] + ".";   
 }
+
+
 
 
 
